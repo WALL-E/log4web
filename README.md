@@ -1,14 +1,23 @@
 # log4web
 通过http接口，允许JS把日志发送到服务器上，然后通过页面查看日志。
 
-## 设计思路
-* 客户端
-  * https://github.com/houyhea/log4web
-* 服务端
-  * OpenResty实现
+## 原则
+* 不存储日志内容
+* 页面不做认证
+* 接口和应用分离
+
+## 架构
+Producer  ->  Broker  ->  Consumer
+
+* Producer
+  * https://github.com/houyhea/log4web
+* Broker
+  * OpenResty实现
+* Consumer
+  * AngularJS
 
 
-## 服务端
+## Broker实现
 
 ### 接口列表
 
@@ -25,13 +34,10 @@ FIFO结构的存储模型
 * kafka
 * Other
 
+## Consumer实现
 ### 页面刷新机制
 * 轮询(v1)
 * Coment
 * WebScoket
 
-### 技术栈
-* 开发平台
-  * OpenResty
-* 开发语言
-  * Lua
+### 日志入口地址需要用户手动保存
