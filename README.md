@@ -27,6 +27,8 @@ Producer  ->  Broker  ->  Consumer
   * 创建日志
 * GET /apis/logs/{uuid}
   * 查看日志
+  
+ref:[Redis实现简单消息队列](http://www.jianshu.com/p/9c04890615ba)
 
 ### 日志存储
 FIFO结构的存储模型
