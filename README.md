@@ -28,13 +28,13 @@ Producer  ->  Broker  ->  Consumer
 * GET /apis/logs/{uuid}
   * 查看日志
 
-ref:[Redis实现简单消息队列](http://www.jianshu.com/p/9c04890615ba)
-
 ### 日志存储
 FIFO结构的存储模型
 * Redis队列(v1)
 * kafka
 * Other
+
+ref:[Redis实现简单消息队列](http://www.jianshu.com/p/9c04890615ba)
 
 ## Consumer实现
 ### 页面刷新机制
