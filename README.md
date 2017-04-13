@@ -1,3 +1,11 @@
+
+```
+一个轻量、可拓展、针对手机网页的前端开发者调试面板。
+https://github.com/WechatFE/vConsole/blob/dev/README_CN.md
+
+这是一个更为合适的解决方案，log4web永久暂停。
+```
+
 # log4web
 通过http接口，允许JS把日志发送到服务器上，然后通过页面查看日志。
 
